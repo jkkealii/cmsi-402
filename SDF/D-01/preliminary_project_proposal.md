@@ -1,0 +1,3 @@
+# _2.0_ Preliminary Project Proposal
+
+My project, tentatively called _"The Tube"_, will be a web platform based around the idea of human-curated YouTube videos. The main component of the platform will be ordered collections of videos, called "serials," that are based on a particular topic. There will be a limited number of site-curated serials, and users will be able to create their own serials on pre-existing or new topics. To start, the platform will lean more towards a traditional, educationally-driven environment, but I hope for the community and platform to mature and expand into all kinds of topics and subjects. 
