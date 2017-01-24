@@ -19,9 +19,9 @@ This project is a good fit for the purposes of this class, because it will requi
 ![development schedule slide][slide5]
 ![questions slide][slide6]
 
-[slide1]: D-01/slide1.png "title"
-[slide2]: D-01/slide2.png "project description"
-[slide3]: D-01/slide3.png "user experience"
-[slide4]: D-01/slide4.png "technologies"
-[slide5]: D-01/slide5.png "development schedule"
-[slide6]: D-01/slide6.png "questions"
+[slide1]: /SDF/D-01/slide1.png "title"
+[slide2]: /SDF/D-01/slide2.png "project description"
+[slide3]: /SDF/D-01/slide3.png "user experience"
+[slide4]: /SDF/D-01/slide4.png "technologies"
+[slide5]: /SDF/D-01/slide5.png "development schedule"
+[slide6]: /SDF/D-01/slide6.png "questions"
