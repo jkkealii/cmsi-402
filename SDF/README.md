@@ -1,8 +1,8 @@
 # Table of Contents
 
-1. [Project Proposal Document/Presentation](/D-01)
-  * 2.0 [Preliminary Proposal](/D-01/preliminary_project_proposal.md)
-  * 3.0 [Project Proposal & Presentation](/D-01/project_proposal.md)
+1. [Project Proposal Document/Presentation](/SDF/D-01)
+  * 2.0 [Preliminary Proposal](/SDF/D-01/preliminary_project_proposal.md)
+  * 3.0 [Project Proposal & Presentation](/SDF/D-01/project_proposal.md)
 2. Requirements Specification Document
 3. Software Development Plan (SDP) or Software/Database Design Description
 4. ~~Project Design Review Presentation~~
