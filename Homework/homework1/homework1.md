@@ -1,5 +1,5 @@
 # Homework Assignment #1
-## Joshua Kuroda // 2017-01-30
+### Joshua Kuroda // 2017-01-30
 
 * 1.1
   All software engineering projects must be able to handle requirements gathering, high-level design, low-level design, development, testing, deployment, maintenance, and wrap-up. There are different development models that approach these tasks differently, but all are essential for effective project management.
@@ -25,7 +25,7 @@
 
 * 3.4
   ![Gantt Chart][chart]
-  [chart]: /homework/chart.pdf "Gantt Chart"
+  [chart]: /Homework/homework1/chart.pdf "Gantt Chart"
 
 * 3.6
   A project manager could create "sick time tasks" at the end of the schedule and insert its lost time into the schedule when an unexpected problem comes up.
