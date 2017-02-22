@@ -4,4 +4,9 @@ log
 coverage
 config
 .env
-
+*.log
+.DS_Store*
+node_modules
+config.json
+.sass-cache
+config.rb
