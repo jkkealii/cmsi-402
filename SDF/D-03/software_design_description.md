@@ -84,20 +84,64 @@
 
 #### 6.3.1 CLASS DESCRIPTIONS
 
-__6.3.1.1 description1 __
+  The following sections provide the details of all classes used in The Tube application. This list is subject to changes, additions, and removals as seen fit as development progresses.
 
-__6.3.1.2 description2 __
+  __6.3.1.1 CommentThread __
+    This class will contain the components necessary for displaying the comments module for each serial. Similar to YouTube, this includes a text box for adding a comment, a list view of posted comment threads, each with the main comment and possible replies.
+
+    Fields: user: User, date_created: Date, comment: String, comment_replies: CommentReply
+
+    Methods: get methods for all, set methods for all
+
+  __6.3.1.2 Topic __
+    This is a basic class for defining topics. Each serial will have a single topic associated with it, but topics can be assigned to multiple serials.
+
+    Fields: name: String, date_created: Date
+
+    Methods: get methods for both, set methods for both
+
+  __6.3.1.3 Video __
+    This class will define the individual videos within a serial. A special property of the Video class is the `vote_count` field, which will be used to gauge public approval or disapproval of a video within a serial.
+
+    Fields: name: String, id: String, vote_count: long
+
+    Methods: get methods for all, set methods for all
+
+  __6.3.1.4 User __
+    This class defines new users, contains the serials he/she has made and/or favorited, and defines the type of user: Verified, Curator, or Standard.
+
+    Fields: name: String, email: String, username: String, password: String, interests: Topic[], favorites: Serial[], date_created: Date, type: String
+
+    Methods: get methods for all, set methods for all
+
+  __6.3.1.5 Serial __
+    This is the most complicated class, for it sits at the heart of the project. There will most likely be additions to this list in the future.
+
+    Fields: name: String, id: String, videos: Video[], main_topic: Topic, creator: User, contributors: User[], views: long, description: String, comments: CommentThread[], date_created: date
+
+    Methods: get methods for all, set methods for all
 
 #### 6.3.2 DETAILED INTERFACE DESCRIPTIONS
+  The following sections provide the details of all interfaces used in The Tube application. This list is subject to changes, additions, and removals as seen fit as development progresses.
+
+  __6.3.2.1 Hapi __
+    Hapi is a server framework for node.js, which "enables developers to focus on writing reusable application logic instead of spending time building infrastructure." Hapi transmits all of the necessary data to the front-end, and makes the server management much easier.
+
+  __6.3.2.2 Sequelize __
+    Sequelize is a promise-based ORM for Node.js and io.js. It supports the PostgreSQL dialect, which is what The Tube uses, and features solid transaction support, relations, read replication and more.
 
 #### 6.3.3 DETAILED DATA STRUCTURE DESCRIPTIONS
+  The following sections provide the details of all data structures used in The Tube application. This list is subject to changes, additions, and removals as seen fit as development progresses.
 
 #### 6.3.4 DETAILED DESIGN DIAGRAMS
 
 ### 6.4 DATABASE DESIGN AND DESCRIPTION
+  The relational database for this project will be of the PostgreSQL dialect. Sequelize, a promise-based object-relational mapping, will be utilized to streamline database creation and upkeep.
 
 #### 6.4.1 DATABASE DESIGN ER DIAGRAM
 
 #### 6.4.2 DATABASE ACCESS
+  Database access will only be available to the user through the back-end, and will be limited depending on the type of user making the request. Curators are the de facto administrators in the system, and they have the ability to edit, create, or remove The Tube's curated content. In addition, Curators have moderator permissions, which will be used to routinely regulate comments on The Tube. Standard users will only be able to create, edit, or remove their own serials, and have view-only permissions for most other data. Verified users have an added "verified" flair next to their name, but for the most part will have the same permissions as Standard users.
 
 #### 6.4.3 DATABASE SECURITY
+  Aside from the varying levels of authorization described in the previous section, the database will provide encrypted passwords and end-to-end encryption between the back-end and database. If the opportunity presents itself, encryption between the front-end and the back-end will be implemented through HTTPS.
