@@ -24,12 +24,12 @@
 | User | Serial | Video | Topic | CommentThread |
 | -- | -- | -- | -- | -- |
 | name: String | name: String | name: String | name: String | user: User |
-| username: String | id: String | id: String (YouTube) | date_created: date? | date_created: date? |
+| username: String | id: String | id: String (YouTube) | date_created: DateTime | date_created: DateTime |
 | password: String | videos: Video[] | vote_count: long | null | comment: String |
 | interests: Topic[] | main_topic: Topic | null | null | comment_replies: maybe CommentReply |
 | favorites: Serial[] | creator: User | null | null | null |
 | date_created: DateTime | contributors: User[] | null | null | null |
 | type: String | views: long | null | null | null |
-| null | description: String | null | null | null |
+| email: String | description: String | null | null | null |
 | null | comments: CommentThread[] | null | null | null |
 | null | date_created: date? | null | null | null |

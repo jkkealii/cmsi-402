@@ -224,7 +224,7 @@ __5.1.3.3 Tracking: modules for tracking user activity__
 
 | Category | Requirement |
 |---|---|
-| Front-end | Material.io, Google Fonts, YouTube API, jQuery | 
+| Front-end | Material Design Lite, Nunjucks, Google Fonts, YouTube API, jQuery | 
 | Server | Node.js, npm, Hapi, Joi, npm-pg, Chai, CodeCov, ESLint, Istanbul, Mocha, Mocha-Istanbul, Nodemon |
 | Database | PostgreSQL |
 
