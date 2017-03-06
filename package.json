@@ -1,7 +1,7 @@
 {
   "name": "the-tube",
   "version": "0.0.0",
-  "description": "Its The Tube",
+  "description": "The Tube! YouTube made easy.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/jkkealii/cmsi-402/issues"
   },
-  "homepage": "https://github.com/jkkealii/cmsi-402#readme"
+  "homepage": "https://github.com/jkkealii/cmsi-402#readme",
+  "dependencies": {
+    "sequelize": "^3.30.2"
+  }
 }
