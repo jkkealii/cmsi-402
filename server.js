@@ -5,7 +5,7 @@ var Inert = require('inert');
 
 var setup = {
     host: process.env.NODE_ENV === "production" ? "0.0.0.0" : "localhost",
-    port: process.env.PORT || "6969"
+    port: process.env.PORT || "8080"
 };
 
 var visionRoutes = require(Path.join(__dirname, 'routes/vision_routes.js'));
@@ -36,7 +36,7 @@ TheTube.register(Inert, function () {});
 TheTube.register(Vision, function () {
     TheTube.views({
         engines: {
-            html: require('nunjucks')
+            html: require('nunjucks-hapi')
         },
         path: Path.join(__dirname, 'templates')
     });
