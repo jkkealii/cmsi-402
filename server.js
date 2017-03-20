@@ -36,7 +36,7 @@ TheTube.register(Inert, function () {});
 TheTube.register(Vision, function () {
     TheTube.views({
         engines: {
-            html: require('nunjucks')
+            html: require('nunjucks-hapi')
         },
         path: Path.join(__dirname, 'templates')
     });
