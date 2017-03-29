@@ -23,8 +23,9 @@
 
 | User | Serial | Video | Topic | CommentThread |
 | -- | -- | -- | -- | -- |
+| id: bigint | id: bigint | id: bigint | id: bigint | id: bigint
 | name: String | name: String | name: String | name: String | user: User |
-| username: String | id: bigint | id: String (YouTube) | date_created: DateTime | date_created: DateTime |
+| username: String | id: bigint | youtube_id: String | date_created: DateTime | date_created: DateTime |
 | password: String | videos: Video[] | vote_count: bigint | count: bigint | comment: String |
 | interests: Topic[] | main_topic: Topic | use_count: bigint | null | comment_replies: maybe CommentReply |
 | favorites: Serial[] | creator: User | null | null | null |

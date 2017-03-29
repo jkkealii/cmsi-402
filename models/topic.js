@@ -1,6 +1,17 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var Topic = sequelize.define('Topic', {
+    id: {
+      type: Sequelize.BIGINT,
+      primaryKey: true,
+      allowNull: false,
+      autoIncrement: true,
+      unique: true,
+      validate: {
+        min: 0
+      }
+    },
+
     name: {
       type: Sequelize.STRING,
       allowNull: false,
