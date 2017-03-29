@@ -1,16 +1,8 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var User = sequelize.define('User', {
-    id: {
-      type: Sequelize.BIGINT,
-      primaryKey: true,
-      autoIncrement: true,
-      unique: true,
-      validate: {
-        min: 0
-      }
-    },
-
+    paranoid: true,
+    
     name: {
       type: Sequelize.STRING,
       allowNull: false,
@@ -48,23 +40,38 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
 
-    date_created: {
-      type: Sequelize.DATE,
-      allowNull: false,
-      defaultValue: Sequelize.NOW
-    },
-
     user_type: {
-      type: Sequelize.STRING,
+      type: Sequelize.ENUM('Standard', 'Admin', 'YouTuber'),
       allowNull: false,
       defaultValue: 'Standard'
     }
   }, {
     classMethods: {
       associate: function(models) {
-        // associations can be defined here
+        // defining many-to-many relationship (user's favorite serials <--> serials)
+        models.User.belongsToMany(models.Serial, {
+          as: 'Favorites',
+          through: 'serial_contributors'
+        });
+
+        models.Serial.belongsToMany(models.User, {
+          as: 'Favorited',
+          through: 'serial_contributors'
+        });
+
+        // defining many-to-many relationship (user's topic interests <--> topics)
+        models.User.belongsToMany(models.Topic, {
+          as: 'Interests',
+          through: 'user_topics'
+        });
+
+        models.Topic.belongsToMany(models.User, {
+          as: 'InterestedUsers',
+          through: 'user_topics'
+        });
       }
     }
   });
   return User;
 };
+

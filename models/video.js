@@ -1,17 +1,8 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var Video = sequelize.define('Video', {
-    id: {
-      type: Sequelize.BIGINT,
-      primaryKey: true,
-      allowNull: false,
-      autoIncrement: true,
-      unique: true,
-      validate: {
-        min: 0
-      }
-    },
-
+    paranoid: true,
+    
     name: {
       type: Sequelize.STRING,
       allowNull: false,

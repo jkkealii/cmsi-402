@@ -1,17 +1,8 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var Topic = sequelize.define('Topic', {
-    id: {
-      type: Sequelize.BIGINT,
-      primaryKey: true,
-      allowNull: false,
-      autoIncrement: true,
-      unique: true,
-      validate: {
-        min: 0
-      }
-    },
-
+    paranoid: true,
+    
     name: {
       type: Sequelize.STRING,
       allowNull: false,
@@ -29,12 +20,6 @@ module.exports = function(sequelize, DataTypes) {
         isInt: true,
         min: 0
       }
-    }
-
-    date_created: {
-      type: Sequelize.DATE,
-      allowNull: false,
-      defaultValue: Sequelize.NOW
     }
   }, {
     classMethods: {
