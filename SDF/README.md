@@ -11,3 +11,19 @@
 7. Final Product Delivery
 8. Oral Status Reports
 9. Oral Status Reports cont.
+
+## Status Reports
+
+### Week 9
+
+Completed the [Software Design Description](/SDF/D-03/software_design_description.md), which helped to further my own understanding of what the final product will look like. Up to this point, I have been getting more familiar with the various components that will make up The Tube, with a focus on learning how the database and back-end systems will be set-up and run. That meant learning exactly how to work with an API, api routes, vision routes, sequelize, and PostgreSQL. Then I dabbled in the front-end for a little while, deciding on [Material Design Lite](https://getmdl.io/) as my front-end framework, since I wanted to stick to the [Material](https://material.io/) guidelines and philosophy to make The Tube consistent with proven methods of increased usability and organization. Then I started to get into the actual set-up of the back-end and database, gettting all of the necessary packages, files, and file organization in place to start some real work.
+
+### Week 11
+
+It has been quite a job in itself to smooth out the project so that all of the dependencies my project uses blends well and results in a coherent, working machine. Most recently, that has been resolving the issue with the [Nunjucks](https://mozilla.github.io/nunjucks/) dependency. Nunjucks is used for JavaScript templating on the front-end, and designing my front-end is difficult without Nunjucks working correctly. Turns out, the issue was that I had the wrong Nunjucks package installed. Since I am using the [Hapi](https://hapijs.com/) framework for my back-end, I needed the Hapi version of Nunjucks. D'oh. Now I am all set to hit the ground running on front-end design, and I plan to have a good chunk of the database schema set up by the next status update.
+
+### Week 13
+
+I have submitted my updated [SRS document](/SDF/D-05/software_requirements_specification.md) and I have made significant progress in terms of organizing my database, using a great tool: [Sequelize](http://docs.sequelizejs.com/en/v3/). Although the current schema is subject to change, and probably will be changed many times in the future, all models and migrations are set-up and now I can move on to more front-end design.
+
+### Week 15
