@@ -1,36 +1,39 @@
 {% include "helpers/_head.html" %}
 
-<div class="mdl-layout mdl-js-layout">
-  <header class="mdl-layout mdl-js-layout">
-    <div class="mdl-layout-icon">
-      <!-- menu icon -->
-    </div>
-    <div class="mdl-layout__header-row">
-      <span class="mdl-layout__title">Sample Layout</span>
-      <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="#">Nav link 1</a>
-        <a class="mdl-navigation__link" href="#">Nav link 2</a>
-        <a class="mdl-navigation__link" href="#">Nav link 3</a>
-      </nav>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout__title">Sample Layout</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="#">Nav link 1</a>
-      <a class="mdl-navigation__link" href="#">Nav link 2</a>
-      <a class="mdl-navigation__link" href="#">Nav link 3</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
-    <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--4-col">Content</div>
-      <div class="mdl-cell mdl-cell--4-col">goes</div>
-      <div class="mdl-cell mdl-cell--4-col">here</div>
-    </div>
-  </main>
-</div>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout-icon">
+          <!-- menu icon -->
+        </div>
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout__title">The Tube</span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="#">Home</a>
+            <a class="mdl-navigation__link" href="#">Browse</a>
+            <a class="mdl-navigation__link" href="#">My Serials</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout__title">The Tube</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="#">Home</a>
+          <a class="mdl-navigation__link" href="#">Browse</a>
+          <a class="mdl-navigation__link" href="#">My Serials</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--4-col">Content</div>
+          <div class="mdl-cell mdl-cell--4-col">goes</div>
+          <div class="mdl-cell mdl-cell--4-col">here</div>
+        </div>
+      </main>
 
-{% include "helpers/_basescripts.html" %}
-{% include "helpers/_footer.html" %}
+      {% include "helpers/_footer.html" %}
+      {% include "helpers/_basescripts.html" %}
+
+    </div>
+
+  {% include "helpers/_end.html" %}

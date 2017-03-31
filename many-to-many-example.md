@@ -23,13 +23,15 @@
 
 | User | Serial | Video | Topic | CommentThread |
 | -- | -- | -- | -- | -- |
-| name: String | name: String | name: String | name: String | user: User |
-| username: String | id: String | id: String (YouTube) | date_created: DateTime | date_created: DateTime |
-| password: String | videos: Video[] | vote_count: long | null | comment: String |
-| interests: Topic[] | main_topic: Topic | null | null | comment_replies: maybe CommentReply |
-| favorites: Serial[] | creator: User | null | null | null |
-| date_created: DateTime | contributors: User[] | null | null | null |
-| type: String | views: long | null | null | null |
+| id: integer | id: integer | id: integer | id: integer | id: integer
+| name: String | name: String | name: String | name: String | op: User |
+| username: String | fav_count: bigint | youtube_id: String | count: bigint | comment_replies: maybe CommentReply |
+| password: String | videos: Video[] | vote_count: bigint | createdAt: date | comment: String |
+| interests: Topic[] | topic: Topic | use_count: bigint | updatedAt: date | createdAt: date |
+| favorites: Serial[] | creator: User | createdAt: date | null | updatedAt: date |
+| serials: Serial[] | contributors: User[] | updatedAt: date | null | null |
+| user_type: Enum | views: bigint | null | null | null |
 | email: String | description: String | null | null | null |
-| null | comments: CommentThread[] | null | null | null |
-| null | date_created: date? | null | null | null |
+| createdAt: date | comments: CommentThread[] | null | null | null |
+| updatedAt: date | createdAt: date | null | null | null |
+| null | updatedAt: date | null | null | null |
