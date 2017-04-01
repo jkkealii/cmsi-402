@@ -1,0 +1,35 @@
+// @import "../modules/_sizing";
+// @import "../modules/_colors";
+
+.tube-card-wide.mdl-card {
+  width: auto;
+}
+
+.tube-card-wide > .mdl-card__image {
+  height: 184px;
+  background: url('../../img/buzz.jpg') center / cover;
+  position: relative;
+}
+
+.tube-card-wide .mdl-card__title {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+}
+.tube-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+// demo purposes
+.tube-card-wide > .mdl-card__eo {
+  height: 184px;
+  background: url('../../img/eo.jpg') center / cover;
+  position: relative;
+}
+
+.tube-card-wide > .mdl-card__animals {
+  height: 184px;
+  background: url('../../img/animals.jpg') center / cover;
+  position: relative;
+}
