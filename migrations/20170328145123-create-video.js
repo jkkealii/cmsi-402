@@ -8,13 +8,50 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      
+      paranoid: true,
+      
       name: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false,
+        notEmpty: true
       },
+
+      youtube_id: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        notEmpty: true,
+        unique: {
+          args: true,
+          msg: 'Video id already stored in database!'
+        }
+      },
+
+      vote_count: {
+        type: Sequelize.BIGINT,
+        allowNull: false,
+        defaultValue: 0,
+        validate: {
+          isInt: true,
+          min: 0
+        }
+      },
+
+      use_count: {
+        type: Sequelize.BIGINT,
+        allowNull: false,
+        defaultValue: 0,
+        validate: {
+          isInt: true,
+          min: 0
+        }
+      },
+
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
       },
+
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE

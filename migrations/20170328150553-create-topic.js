@@ -8,13 +8,33 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+
+      paranoid: true,
+      
       name: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false,
+        notEmpty: true,
+        unique: {
+          args: true,
+          msg: 'Topic already exists!'
+        }
       },
+
+      count: {
+        type: Sequelize.BIGINT,
+        allowNull: false,
+        validate: {
+          isInt: true,
+          min: 0
+        }
+      },
+
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
       },
+      
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE

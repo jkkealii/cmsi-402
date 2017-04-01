@@ -27,3 +27,22 @@ It has been quite a job in itself to smooth out the project so that all of the d
 I have submitted my updated [SRS document](/SDF/D-05/software_requirements_specification.md) and I have made significant progress in terms of organizing my database, using a great tool: [Sequelize](http://docs.sequelizejs.com/en/v3/). Although the current schema is subject to change, and probably will be changed many times in the future, all models and migrations are set-up and now I can move on to more front-end design.
 
 ### Week 15
+
+---
+
+#### Tables in the database
+
+| User | Serial | Video | Topic | CommentThread | CommentReply |
+| -- | -- | -- | -- | -- | -- |
+| id: integer | id: integer | id: integer | id: integer | id: integer | id: integer |
+| name: String | name: String | name: String | name: String | op: User | op: User |
+| username: String | fav_count: bigint | youtube_id: String | count: bigint | comment_replies: CommentReply[] | comment: String |
+| password: String | videos: Video[] | vote_count: bigint | createdAt: date | comment: String | createdAt: date |
+| interests: Topic[] | topic: Topic | use_count: bigint | updatedAt: date | createdAt: date | updatedAt: date |
+| favorites: Serial[] | creator: User | createdAt: date |  | updatedAt: date |  |
+| serials: Serial[] | contributors: User[] | updatedAt: date |  | likes: bigint |  |
+| user_type: Enum | views: bigint |  |  |  |  |
+| email: String | description: String |  |  |  |  |
+| createdAt: date | comments: CommentThread[] |  |  |  |  |
+| updatedAt: date | createdAt: date |  |  |  |  |
+|  | updatedAt: date |  |  |  |  |

@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: function(queryInterface, Sequelize) {
-    return queryInterface.createTable('CommentThreads', {
+    return queryInterface.createTable('CommentReplies', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -42,7 +42,7 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE
       },
-      
+
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
@@ -50,6 +50,6 @@ module.exports = {
     });
   },
   down: function(queryInterface, Sequelize) {
-    return queryInterface.dropTable('CommentThreads');
+    return queryInterface.dropTable('CommentReplies');
   }
 };
