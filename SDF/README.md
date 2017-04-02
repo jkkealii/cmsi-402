@@ -24,7 +24,7 @@ It has been quite a job in itself to smooth out the project so that all of the d
 
 ### Week 13
 
-I have submitted my updated [SRS document](/SDF/D-05/software_requirements_specification.md) and I have made significant progress in terms of organizing my database, using a great tool: [Sequelize](http://docs.sequelizejs.com/en/v3/). Although the current schema is subject to change, and probably will be changed many times in the future, all models and migrations are set-up and now I can move on to more front-end design.
+I have submitted my updated [SRS document](/SDF/D-05/software_requirements_specification.md) and I have made significant progress in terms of organizing my database, using a great tool: [Sequelize](http://docs.sequelizejs.com/en/v3/). Although the current schema is subject to change, and probably will be changed many times in the future, all models and migrations are set-up! The total number of tables now sits at six, with the most recent addition being the `CommentReply` table used in association with `CommentThread`. Progress has also been made on the front-end, in particular, on the homepage, where I am laying out some of the foundation for the rest of the site, using templating and [Material Design Lite](https://getmdl.io/) components to make a responsive interface focused on usability.
 
 ### Week 15
 
