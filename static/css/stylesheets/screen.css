@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 8, ../sass/partials/_font.scss */
-html, body, .mdl-textfield__input {
+html, body, .mdl-textfield__input, h3 small, h4 small, h3, h4 {
   font-family: 'Inconsolata', monospace;
 }
 
