@@ -41,6 +41,15 @@ var visionRoutes = [
         }
     },
     {
+        path: '/videodemo',
+        method: 'GET',
+        handler: function (req, res) {
+            res.view('video_view.html', {
+
+            });
+        }
+    },
+    {
         path: '/events/{event}',
         method: 'GET',
         handler: function (req, res) {

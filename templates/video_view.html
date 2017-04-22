@@ -1,0 +1,26 @@
+{% include "helpers/_head.html" %}
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      {% include "helpers/_headernav.html" %}
+      <main class="mdl-layout__content">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+            <iframe width="560" height="315" src="http://www.youtube.com/embed/PKffm2uI4dk?&rel=0&hd=1&autohide=0&color=white" frameborder="0" allowfullscreen></iframe>
+            <div class="mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Sad Cat Diary</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                Description goes here.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% include "helpers/_footer.html" %}
+      </main>
+
+      {% include "helpers/_basescripts.html" %}
+    </div>
+
+  {% include "helpers/_end.html" %}
