@@ -11,8 +11,37 @@
   width: 80px;
 }
 
-.tube-card-wide.mdl-card, .tube-card-description.mdl-card, .tube-card-comment.mdl-card {
+.tube-card-wide.mdl-card, .tube-card-description.mdl-card, .tube-card-comment.mdl-card, .tube-card-video.mdl-card {
   width: auto;
+}
+
+.tube-card-video > .mdl-card__media {
+  height: 184px;
+  position: relative;
+}
+
+.tube-card-video > .mdl-card__media#ser1 {
+  background: url('../../img/ser1.jpg') center / cover;
+}
+
+.tube-card-video > .mdl-card__media#ser2 {
+  background: url('../../img/ser2.jpg') center / cover;
+}
+
+.tube-card-video > .mdl-card__media#ser3 {
+  background: url('../../img/ser3.jpg') center / cover;
+}
+
+.tube-card-video > .mdl-card__media#ser4 {
+  background: url('../../img/ser4.jpg') center / cover;
+}
+
+.tube-card-video > .mdl-card__media#ser5 {
+  background: url('../../img/ser5.jpg') center / cover;
+}
+
+.tube-card-video > .mdl-card__media#ser6 {
+  background: url('../../img/ser6.jpg') center / cover;
 }
 
 .tube-card-wide > .mdl-card__image {

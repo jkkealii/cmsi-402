@@ -50,6 +50,15 @@ var visionRoutes = [
         }
     },
     {
+        path: '/serialdemo',
+        method: 'GET',
+        handler: function (req, res) {
+            res.view('serial.html', {
+
+            });
+        }
+    },
+    {
         path: '/events/{event}',
         method: 'GET',
         handler: function (req, res) {

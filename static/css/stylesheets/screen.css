@@ -20,18 +20,54 @@ html, body, .mdl-textfield__input, h3 small, h4 small, h3, h4 {
 }
 
 /* line 14, ../sass/partials/_base.scss */
-.tube-card-wide.mdl-card, .tube-card-description.mdl-card, .tube-card-comment.mdl-card {
+.tube-card-wide.mdl-card, .tube-card-description.mdl-card, .tube-card-comment.mdl-card, .tube-card-video.mdl-card {
   width: auto;
 }
 
 /* line 18, ../sass/partials/_base.scss */
+.tube-card-video > .mdl-card__media {
+  height: 184px;
+  position: relative;
+}
+
+/* line 23, ../sass/partials/_base.scss */
+.tube-card-video > .mdl-card__media#ser1 {
+  background: url("../../img/ser1.jpg") center/cover;
+}
+
+/* line 27, ../sass/partials/_base.scss */
+.tube-card-video > .mdl-card__media#ser2 {
+  background: url("../../img/ser2.jpg") center/cover;
+}
+
+/* line 31, ../sass/partials/_base.scss */
+.tube-card-video > .mdl-card__media#ser3 {
+  background: url("../../img/ser3.jpg") center/cover;
+}
+
+/* line 35, ../sass/partials/_base.scss */
+.tube-card-video > .mdl-card__media#ser4 {
+  background: url("../../img/ser4.jpg") center/cover;
+}
+
+/* line 39, ../sass/partials/_base.scss */
+.tube-card-video > .mdl-card__media#ser5 {
+  background: url("../../img/ser5.jpg") center/cover;
+}
+
+/* line 43, ../sass/partials/_base.scss */
+.tube-card-video > .mdl-card__media#ser6 {
+  background: url("../../img/ser6.jpg") center/cover;
+}
+
+/* line 47, ../sass/partials/_base.scss */
 .tube-card-wide > .mdl-card__image {
   height: 184px;
   background: url("../../img/buzz.jpg") center/cover;
   position: relative;
 }
 
-/* line 24, ../sass/partials/_base.scss */
+/* line 53, ../sass/partials/_base.scss */
 .tube-card-wide .mdl-card__title {
   color: #fff;
   background: rgba(0, 0, 0, 0.4);
@@ -39,19 +75,19 @@ html, body, .mdl-textfield__input, h3 small, h4 small, h3, h4 {
   bottom: 0;
 }
 
-/* line 30, ../sass/partials/_base.scss */
+/* line 59, ../sass/partials/_base.scss */
 .tube-card-wide > .mdl-card__menu {
   color: #fff;
 }
 
-/* line 35, ../sass/partials/_base.scss */
+/* line 64, ../sass/partials/_base.scss */
 .tube-card-wide > .mdl-card__eo {
   height: 184px;
   background: url("../../img/eo.jpg") center/cover;
   position: relative;
 }
 
-/* line 41, ../sass/partials/_base.scss */
+/* line 70, ../sass/partials/_base.scss */
 .tube-card-wide > .mdl-card__animals {
   height: 184px;
   background: url("../../img/animals.jpg") center/cover;
