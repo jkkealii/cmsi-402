@@ -20,7 +20,7 @@ html, body, .mdl-textfield__input, h3 small, h4 small, h3, h4 {
 }
 
 /* line 14, ../sass/partials/_base.scss */
-.tube-card-wide.mdl-card {
+.tube-card-wide.mdl-card, .tube-card-description.mdl-card, .tube-card-comment.mdl-card {
   width: auto;
 }
 
