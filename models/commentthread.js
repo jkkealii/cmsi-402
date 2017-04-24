@@ -18,6 +18,16 @@ module.exports = function(sequelize, DataTypes) {
         key: 'id',
         deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
       }
+    },
+
+    likes: {
+      type: Sequelize.BIGINT,
+      allowNull: false,
+      defaultValue: 0,
+      validate: {
+        isInt: true,
+        min: 0
+      }
     }
   }, {
     classMethods: {
@@ -25,7 +35,9 @@ module.exports = function(sequelize, DataTypes) {
         // second half of one-to-many relationship from perspective of User
         models.User.hasMany(models.CommentThread, {foreignKey: 'op'});
 
-        // comment reply association goes here
+        // one-to-many relationship (comment thread --> comment reply)
+        models.CommentReply.belongsTo(models.CommentThread, {as: 'comment_replies', foreignKey: 'id'});
+        CommentThread.hasMany(models.CommentReply);
       }
     }
   });

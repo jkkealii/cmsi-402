@@ -3,11 +3,93 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 8, ../sass/partials/_font.scss */
-html, body, .mdl-textfield__input {
+html, body, .mdl-textfield__input, h3 small, h4 small, h3, h4 {
   font-family: 'Inconsolata', monospace;
 }
 
-/* line 13, ../sass/partials/_font.scss */
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, h1, h2, h3, h4, h5, h6, blockquote, .mdl-typography--display-4, .mdl-typography--display-4-color-contrast, .mdl-typography--display-3, .mdl-typography--display-3-color-contrast, .mdl-typography--display-2, .mdl-typography--display-2-color-contrast, .mdl-typography--display-1, .mdl-typography--display-1-color-contrast, .mdl-typography--headline, .mdl-typography--headline-color-contrast, .mdl-typography--title, .mdl-typography--title-color-contrast, .mdl-typography--subhead, .mdl-typography--subhead-color-contrast, .mdl-typography--body-2-force-preferred-font, .mdl-typography--body-2-force-preferred-font-color-contrast, .mdl-typography--body-1-force-preferred-font, .mdl-typography--body-1-force-preferred-font-color-contrast, .mdl-typography--caption-force-preferred-font, .mdl-typography--caption-force-preferred-font-color-contrast, .mdl-typography--menu, .mdl-typography--menu-color-contrast, .mdl-typography--button, .mdl-typography--button-color-contrast, .mdl-badge[data-badge]:after, .mdl-button, .mdl-chip, .mdl-list__item, .mdl-layout__title, .mdl-layout-title, .mdl-snackbar, .mdl-snackbar__action {
-  font-family: 'Noto Serif', serif;
+/* line 4, ../sass/partials/_base.scss */
+.tube-logo-image {
+  height: 30px;
+  width: 48px;
+}
+
+/* line 9, ../sass/partials/_base.scss */
+.tube-drawer-logo-image {
+  height: 50px;
+  width: 80px;
+}
+
+/* line 14, ../sass/partials/_base.scss */
+.tube-card-wide.mdl-card, .tube-card-description.mdl-card, .tube-card-comment.mdl-card, .tube-card-video.mdl-card {
+  width: auto;
+}
+
+/* line 18, ../sass/partials/_base.scss */
+.tube-card-video > .mdl-card__media {
+  height: 184px;
+  position: relative;
+}
+
+/* line 23, ../sass/partials/_base.scss */
+.tube-card-video > .mdl-card__media#ser1 {
+  background: url("../../img/ser1.jpg") center/cover;
+}
+
+/* line 27, ../sass/partials/_base.scss */
+.tube-card-video > .mdl-card__media#ser2 {
+  background: url("../../img/ser2.jpg") center/cover;
+}
+
+/* line 31, ../sass/partials/_base.scss */
+.tube-card-video > .mdl-card__media#ser3 {
+  background: url("../../img/ser3.jpg") center/cover;
+}
+
+/* line 35, ../sass/partials/_base.scss */
+.tube-card-video > .mdl-card__media#ser4 {
+  background: url("../../img/ser4.jpg") center/cover;
+}
+
+/* line 39, ../sass/partials/_base.scss */
+.tube-card-video > .mdl-card__media#ser5 {
+  background: url("../../img/ser5.jpg") center/cover;
+}
+
+/* line 43, ../sass/partials/_base.scss */
+.tube-card-video > .mdl-card__media#ser6 {
+  background: url("../../img/ser6.jpg") center/cover;
+}
+
+/* line 47, ../sass/partials/_base.scss */
+.tube-card-wide > .mdl-card__image {
+  height: 184px;
+  background: url("../../img/buzz.jpg") center/cover;
+  position: relative;
+}
+
+/* line 53, ../sass/partials/_base.scss */
+.tube-card-wide .mdl-card__title {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 59, ../sass/partials/_base.scss */
+.tube-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+/* line 64, ../sass/partials/_base.scss */
+.tube-card-wide > .mdl-card__eo {
+  height: 184px;
+  background: url("../../img/eo.jpg") center/cover;
+  position: relative;
+}
+
+/* line 70, ../sass/partials/_base.scss */
+.tube-card-wide > .mdl-card__animals {
+  height: 184px;
+  background: url("../../img/animals.jpg") center/cover;
+  position: relative;
 }

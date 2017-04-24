@@ -1,0 +1,100 @@
+{% include "helpers/_head.html" %}
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      {% include "helpers/_headernav.html" %}
+      <main class="mdl-layout__content">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+            <iframe width="560" height="315" src="http://www.youtube.com/embed/PKffm2uI4dk?&rel=0&hd=1&autohide=0&color=white" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+            <div class="tube-card-description mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Sad Cat Diary</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <strong>zefrank1</strong>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <p>
+                  The diary of sad cats everywhere :(<br>
+                  Tweet This :: http://bit.ly/1a8AnDP (you can add text !)<br>
+                  Post To FB :: http://on.fb.me/19wNCLy<br>
+                  Music : http://bit.ly/1479bzw<br>
+                  Inspired by : http://www.buzzfeed.com/copyranter/th...<br>
+                  (i am also the EVP of video for Buzzfeed)<br>
+
+                  Credits ::<br>
+
+                  Film Footage courtesy of Shutterstock, Inc., Used by Permission
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+            <ul class="serial-video-list mdl-list">
+              <li class="mdl-list__item mdl-list__item--two-line">
+                <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-avatar">play_circle_outline</i>
+                  <span>Sad Dog Diary</span>
+                  <span class="mdl-list__item-sub-title">As requested... the sad thoughts of sad dogs :(</span>
+                </span>
+                <span class="mdl-list__item-secondary-content">
+                  <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">watch_later</i></a>
+                </span>
+              </li>
+              <li class="mdl-list__item mdl-list__item--two-line">
+                <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-avatar">play_circle_outline</i>
+                  <span>Carrot Hugs</span>
+                  <span class="mdl-list__item-sub-title">one minute of pure carrot love.</span>
+                </span>
+                <span class="mdl-list__item-secondary-content">
+                  <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">watch_later</i></a>
+                </span>
+              </li>
+              <li class="mdl-list__item mdl-list__item--two-line">
+                <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-avatar">play_circle_outline</i>
+                  <span>Guide to Candy Trading</span>
+                  <span class="mdl-list__item-sub-title">An oldie... but necessary for your post Halloween trading activities</span>
+                </span>
+                <span class="mdl-list__item-secondary-content">
+                  <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">watch_later</i></a>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+            <div class="tube-card-comment mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Comments</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <strong>sirseim</strong>
+                <form action="#">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="new_comment">
+                      <i class="material-icons">comment</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                      <input class="mdl-textfield__input" type="text" id="new_comment">
+                      <label class="mdl-textfield__label" for="comment-expandable">Comment Input</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% include "helpers/_footer.html" %}
+      </main>
+
+      {% include "helpers/_basescripts.html" %}
+    </div>
+
+  {% include "helpers/_end.html" %}

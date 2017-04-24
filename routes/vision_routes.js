@@ -32,10 +32,28 @@ var visionRoutes = [
         }
     },
     {
-        path: '/events',
+        path: '/login',
         method: 'GET',
         handler: function (req, res) {
-            res.view('event_list.html', {
+            res.view('login.html', {
+
+            });
+        }
+    },
+    {
+        path: '/videodemo',
+        method: 'GET',
+        handler: function (req, res) {
+            res.view('video_view.html', {
+
+            });
+        }
+    },
+    {
+        path: '/serialdemo',
+        method: 'GET',
+        handler: function (req, res) {
+            res.view('serial.html', {
 
             });
         }

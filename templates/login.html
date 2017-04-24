@@ -1,0 +1,81 @@
+{% include "helpers/_head.html" %}
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      {% include "helpers/_headernav.html" %}
+      <main class="mdl-layout__content">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone
+            mdl-cell--3-offset-desktop mdl-cell--1-offset-tablet mdl-cell--0-offset-phone">
+            <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone
+              mdl-cell--3-offset-desktop mdl-cell--1-offset-tablet mdl-cell--0-offset-phone">
+              <h4><strong>LOGIN/REGISTER</strong></h4>
+            </div>
+
+            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+              <div class="mdl-tabs__tab-bar">
+                  <a href="#login-panel" class="mdl-tabs__tab is-active">Login</a>
+                  <a href="#register-panel" class="mdl-tabs__tab">Register</a>
+              </div>
+              <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone
+                mdl-cell--3-offset-desktop mdl-cell--1-offset-tablet mdl-cell--0-offset-phone mdl-tabs__panel
+                is-active" id="login-panel">
+                <form method="post" action="/login">
+
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" id="username">
+                    <label class="mdl-textfield__label" for="username">username</label>
+                  </div>
+
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="password" id="password">
+                    <label class="mdl-textfield__label" for="password">password</label>
+                  </div>
+
+                  <div class="mdl-layout-spacer"></div>
+                  
+                  <button class="mdl-button mdl-js-button mdl-button--primary" type="submit">Login</button>
+
+                </form>
+              </div>
+              <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone
+                mdl-cell--3-offset-desktop mdl-cell--1-offset-tablet mdl-cell--0-offset-phone mdl-tabs__panel"
+                id="register-panel">
+                <form method="post">
+
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" id="name">
+                    <label class="mdl-textfield__label" for="name">name</label>
+                  </div>
+
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" id="username">
+                    <label class="mdl-textfield__label" for="username">username</label>
+                  </div>
+
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" id="email">
+                    <label class="mdl-textfield__label" for="email">email</label>
+                  </div>
+
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="password" id="password">
+                    <label class="mdl-textfield__label" for="password">password</label>
+                  </div>
+
+                  <div class="mdl-layout-spacer"></div>
+                  
+                  <button class="mdl-button mdl-js-button mdl-button--primary" type="submit">Register</button>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% include "helpers/_footer.html" %}
+      </main>
+
+      {% include "helpers/_basescripts.html" %}
+    </div>
+
+  {% include "helpers/_end.html" %}
