@@ -1,8 +1,6 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var CommentThread = sequelize.define('CommentThread', {
-    paranoid: true,
-    
     comment: {
       type: Sequelize.STRING,
       allowNull: false,

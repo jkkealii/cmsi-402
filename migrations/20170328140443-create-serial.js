@@ -8,8 +8,6 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-
-      paranoid: true,
       
       name: {
         type: Sequelize.STRING,

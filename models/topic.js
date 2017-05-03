@@ -1,8 +1,6 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var Topic = sequelize.define('Topic', {
-    paranoid: true,
-    
     name: {
       type: Sequelize.STRING,
       allowNull: false,

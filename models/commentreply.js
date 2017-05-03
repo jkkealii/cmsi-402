@@ -1,8 +1,6 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var CommentReply = sequelize.define('CommentReply', {
-    paranoid: true,
-    
     comment: {
       type: Sequelize.STRING,
       allowNull: false,
