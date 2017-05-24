@@ -44,18 +44,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
-          model: User,
-          key: 'id',
-          deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
-        }
-      },
-
-      // first half of one-to-many relationship (serial's topic --> topics)
-      topic: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        references: {
-          model: Topic,
+          model: 'Users',
           key: 'id',
           deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
         }
